@@ -1,1 +1,66 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/resources/img/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background-size: cover;
+}
+
+main {
+    .title {
+        color: white;
+        font-size: 100px;
+        font-weight: bolder;
+        margin: 60px 0;
+    }
+
+    .text-focus-in {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.3s both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.3s both;
+    }
+
+    .my-card {
+        border: 2px solid gray;
+        border-radius: 25px;
+        padding: 15px;
+        color: white;
+        text-align: center;
+        width: 305px;
+        height: 130px;
+    }
+}
+
+// KEYFRAMES ANIMAZIONI
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
